@@ -3,9 +3,6 @@ package epam.lab2;
 public class Logic {
 
     public boolean task1(int number){
-        if (number<1000 || number > 9999) {
-            System.out.println("Invalid number");
-        }
         int sum1 = (number/1000) + (number/100 % 10);
         int sum2 = (number/10 %10) + (number%10);
         if (sum1 == sum2) {
