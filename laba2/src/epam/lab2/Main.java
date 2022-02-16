@@ -16,12 +16,12 @@ public class Main {
         double res = logic.task2(a,b,c);
         output.outputDouble(res);
 
-        double val1 = input.enterDouble("Enter a:");
-        double val2 = input.enterDouble("Enter b:");
+        double val1 = input.positiveValue("Enter a:");
+        double val2 = input.positiveValue("Enter b:");
         double result = logic.trianglePerimeter(val1,val2);
         double result2 = logic.triangleSquare(a,b);
         output.triangleOutput(result,result2);
-
+        
         int x = input.enterInt("Enter x: ");
         int y = input.enterInt("Enter y: ");
         boolean r = logic.task4(x,y);
