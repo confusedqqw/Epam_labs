@@ -38,6 +38,14 @@ public class Input {
         }while(input<1000 || input>9999);
         return input;
     }
+    
+    public double positiveValue(String mes){
+        double input;
+        do{
+            input = enterDouble(mes);
+        }while(input<0);
+        return input;
+    }
 
 
 }
